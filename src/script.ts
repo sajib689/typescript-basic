@@ -21,8 +21,27 @@ person.age = 25
 person.country = "Canada"
 console.log(person)
 
-let myFunc: Function
 
- myFunc = () => {
-    console.log("Hello, World!");
+
+ const myFunc = (a: string, b: string) => {
+    console.log(`Hello ${a} ${b}`)
+    return a + b;
 }
+
+myFunc("John", "Doe")
+
+type Person = {
+    name: string;
+    age: number;
+    country: string;
+}
+
+
+const manFunction = (person: Person) => {
+    console.log(`Hello ${person.name} ${person.age} ${person.country}`)
+    return person.name + person.age + person.country;
+}
+
+manFunction({ name: "John", age: 30, country: "USA" })
+
+
