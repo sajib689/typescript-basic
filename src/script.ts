@@ -20,3 +20,9 @@ person.name = "Jane"
 person.age = 25
 person.country = "Canada"
 console.log(person)
+
+let myFunc: Function
+
+ myFunc = () => {
+    console.log("Hello, World!");
+}
